@@ -1,151 +1,67 @@
 *{
+    margin: 0%;
     padding: 0%;
-    margin:0%;
 }
-header{
-    width: 100%;
-    height: 100px;
-    background-image: linear-gradient(to right,rgb(114, 114, 114),rgb(38, 41, 51));
-}
-nav{
-    width: 75%;
-    height: 100px;
-    float: left;
+#headerx{
+    background-color: rgb(180, 180, 180);
+    font-family: system-ui;
     text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
 }
-nav li{
-    width: 25%;
-line-height: 100px;
-    display: inline-block;
-    float:left;
-   
-}
-nav a{
-    width: 100%;
-    text-decoration: none;
-    height: 95px;
-    display: inline-block;
-    color:rgb(0, 0, 0);
-    transition:1s background-color 0s;
-}
-nav a:hover{
-    border-bottom: 5px solid black;
-    background-color: rgb(184, 184, 184);
-}
-#boxhdr{
-    width: 25%;
-    float: right;
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-}
-#h1header{
-float: left;
-line-height: 100px;
-padding: 0px 20px;
-color: rgb(207, 207, 207);
-}
-#imgheader{
-height: 100px;
-border-radius: 50%;
-padding: 0px 20px;
-}
-main{
-    width: 100%;
-    height: 1300px;
-    background-color: gold;
-    animation-name: main;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-aside{
-    width: 30%;
-    height: auto;
-    background-color: white;
+#mainx{
     text-align: center;
+    width: 50%;
     float: left;
 }
-.moon{
-    width: 80%;
-    border-bottom: 2px solid rgb(59, 59, 59);
-    display: inline-block;
+#result_show , #result_delet,#html{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border-radius:50px ;
+    border: none;
+    font-family: system-ui;
+    margin-bottom: 20px;
+    transition-duration: 0.2s;
+    transition-property: all;
 }
-.gg{width: 90%;top:10px;
-    margin: 20px 0px;
-}
-#youtube{margin: 10px 0px;
-    width: 90%;
-}
-#art{
-    width: 70%;
-    height: 100%;
-    float:right;
+#result_delet{
+    left: 260px;
     position: relative;
 }
-#box{position: absolute;
-    width:400px ;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    padding: 20px;
-    text-align: center;
+#html:hover{
+background-color: cornflowerblue;
 }
-div h1{
-border-bottom: 2px solid rgb(53, 53, 53);
-padding: 10px 0px;
+#result_delet:hover{
+     
+    background-color: rgb(255, 0, 0);
 }
-div p{
-    text-align: justify;
-    font-size: 20px;
-    padding: 10px 0px;
-    font-family: fantasy;
+#result_show:hover{
+    background-color: rgb(0, 105, 32);
 }
-@keyframes main{
-    0%{background-color:  rgb(190, 190, 190);}
-    20%{background-color:  rgb(49, 49, 49)}
-    40%{background-color:  rgb(173, 173, 173)}
-    60%{background-color:  rgb(126, 126, 126)}
-    80%{background-color:  rgb(133, 133, 133)}
-    100%{background-color: rgb(190, 190, 190)}
+#result_show:active , #result_delet:active ,#html:active{
+    transform: scale(0.9);
 }
+#write_codes{
+    min-width: 95%;
+    max-width: 95%;
+    border-radius: 10px;
+    min-height: 600px;
+    font-size: 16px;
+    border: 2px solid rgb(44, 44, 44);
+    
+}
+#navx{
 
-@media only screen and (min-width:970px) and (max-width:1170px){
-    #boxhdr{width:30%} 
-    nav{width: 70%;}
+    width: 50%;
+    float: right;
+    position: relative;
 }
-@media only screen and (min-width:730px) and (max-width:970px){
-#boxhdr{width: 40%;}
-nav{width: 60%;}
-
-}
-@media only screen and (min-width:200px) and (max-width:730px){
-    nav,header{
-       
-        height: auto;
-        width: 100%;
-        float: none;
-    }   
-     #h1header{
-        float: none;
-    }
-    #boxhdr{width: 100%;height: auto;text-align: center;}
-    #h1header{
-        float: none;
-        text-decoration:transparent;
-        font-size: 50px;
-        color: rgb(145, 145, 145);
-    }
-    #imgheader{
-width: 300px;height: 300px;
-    }
-    aside{
-        width: 100%;
-    }
-    #art{
-        width: 100%;
-        background-color: rgb(211, 211, 211);
-    }
-    nav li{float: none;width: 100%;}
-    #box{width: 300px;}
+#result_page{
+    width:98%;
+    min-height: 600px;
+    position: relative;
+    border: 2px solid red ;
 }
